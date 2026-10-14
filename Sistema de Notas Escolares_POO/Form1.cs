@@ -16,5 +16,6 @@ namespace Sistema_de_Notas_Escolares_POO
         {
             InitializeComponent();
         }
+
     }
 }
