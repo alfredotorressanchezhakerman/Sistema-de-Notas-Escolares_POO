@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36429.23 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistema de Notas Escolares_POO", "Sistema de Notas Escolares_POO\Sistema de Notas Escolares_POO.csproj", "{7E49DB03-6DDF-4F30-B012-E90D6C52B9E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E49DB03-6DDF-4F30-B012-E90D6C52B9E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E49DB03-6DDF-4F30-B012-E90D6C52B9E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E49DB03-6DDF-4F30-B012-E90D6C52B9E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E49DB03-6DDF-4F30-B012-E90D6C52B9E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7825A87-7DC6-4B26-B33C-F2EB3F2A1FB9}
+	EndGlobalSection
+EndGlobal
