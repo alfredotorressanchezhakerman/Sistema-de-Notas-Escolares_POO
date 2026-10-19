@@ -16,7 +16,7 @@ namespace Sistema_de_Notas_Escolares_POO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Form2());
         }
     }
 }

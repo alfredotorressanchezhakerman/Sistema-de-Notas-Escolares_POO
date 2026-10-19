@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnCalificaciones = new System.Windows.Forms.Button();
+            this.btnReportes = new System.Windows.Forms.Button();
+            this.btnMaterias = new System.Windows.Forms.Button();
+            this.btnNuevoAlumn = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -54,28 +54,6 @@
             this.panel1.Size = new System.Drawing.Size(694, 100);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Location = new System.Drawing.Point(3, 376);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(694, 156);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Location = new System.Drawing.Point(3, 99);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(694, 282);
-            this.panel3.TabIndex = 2;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -86,6 +64,93 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Total alumnos: 0 | Promedio general: 0.0";
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnSalir);
+            this.panel2.Controls.Add(this.btnEditar);
+            this.panel2.Controls.Add(this.btnEliminar);
+            this.panel2.Controls.Add(this.btnCalificaciones);
+            this.panel2.Controls.Add(this.btnReportes);
+            this.panel2.Controls.Add(this.btnMaterias);
+            this.panel2.Controls.Add(this.btnNuevoAlumn);
+            this.panel2.Location = new System.Drawing.Point(3, 376);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(694, 156);
+            this.panel2.TabIndex = 1;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(583, 111);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(101, 35);
+            this.btnSalir.TabIndex = 6;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(15, 96);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(101, 47);
+            this.btnEditar.TabIndex = 5;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(136, 11);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(101, 52);
+            this.btnEliminar.TabIndex = 4;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            // 
+            // btnCalificaciones
+            // 
+            this.btnCalificaciones.Location = new System.Drawing.Point(136, 96);
+            this.btnCalificaciones.Name = "btnCalificaciones";
+            this.btnCalificaciones.Size = new System.Drawing.Size(101, 47);
+            this.btnCalificaciones.TabIndex = 3;
+            this.btnCalificaciones.Text = "Calificaciones";
+            this.btnCalificaciones.UseVisualStyleBackColor = true;
+            // 
+            // btnReportes
+            // 
+            this.btnReportes.Location = new System.Drawing.Point(262, 96);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.Size = new System.Drawing.Size(101, 41);
+            this.btnReportes.TabIndex = 2;
+            this.btnReportes.Text = "Ver Reportes";
+            this.btnReportes.UseVisualStyleBackColor = true;
+            // 
+            // btnMaterias
+            // 
+            this.btnMaterias.Location = new System.Drawing.Point(262, 11);
+            this.btnMaterias.Name = "btnMaterias";
+            this.btnMaterias.Size = new System.Drawing.Size(101, 52);
+            this.btnMaterias.TabIndex = 1;
+            this.btnMaterias.Text = "Administrar Materias";
+            this.btnMaterias.UseVisualStyleBackColor = true;
+            // 
+            // btnNuevoAlumn
+            // 
+            this.btnNuevoAlumn.Location = new System.Drawing.Point(15, 11);
+            this.btnNuevoAlumn.Name = "btnNuevoAlumn";
+            this.btnNuevoAlumn.Size = new System.Drawing.Size(101, 52);
+            this.btnNuevoAlumn.TabIndex = 0;
+            this.btnNuevoAlumn.Text = "Nuevo Alumno";
+            this.btnNuevoAlumn.UseVisualStyleBackColor = true;
+            this.btnNuevoAlumn.Click += new System.EventHandler(this.btnNuevoAlumn_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.dataGridView1);
+            this.panel3.Location = new System.Drawing.Point(3, 99);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(694, 282);
+            this.panel3.TabIndex = 2;
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -94,70 +159,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(240, 150);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(15, 11);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 52);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Nuevo Alumno";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(262, 11);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 52);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Nuevo Alumno";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(262, 96);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(101, 41);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Nuevo Alumno";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(136, 96);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(101, 47);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Nuevo Alumno";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(136, 11);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(101, 52);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Nuevo Alumno";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(15, 96);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(101, 47);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Nuevo Alumno";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(583, 111);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(101, 35);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Nuevo Alumno";
-            this.button7.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
@@ -185,12 +186,12 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnNuevoAlumn;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnCalificaciones;
+        private System.Windows.Forms.Button btnReportes;
+        private System.Windows.Forms.Button btnMaterias;
     }
 }

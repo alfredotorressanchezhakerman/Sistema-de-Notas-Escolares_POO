@@ -26,5 +26,12 @@ namespace Sistema_de_Notas_Escolares_POO
         {
 
         }
+
+        private void btnNuevoAlumn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmAlumno Alumno = new frmAlumno();
+            Alumno.Show();
+        }
     }
 }

@@ -32,9 +32,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnTXT = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnPDF = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -76,14 +76,14 @@
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
-            // button1
+            // btnTXT
             // 
-            this.button1.Location = new System.Drawing.Point(16, 350);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(210, 37);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Guardar Como TXT";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnTXT.Location = new System.Drawing.Point(16, 350);
+            this.btnTXT.Name = "btnTXT";
+            this.btnTXT.Size = new System.Drawing.Size(210, 37);
+            this.btnTXT.TabIndex = 2;
+            this.btnTXT.Text = "Guardar Como TXT";
+            this.btnTXT.UseVisualStyleBackColor = true;
             // 
             // btnCancelar
             // 
@@ -94,23 +94,23 @@
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnPDF
             // 
-            this.button3.Location = new System.Drawing.Point(16, 393);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(210, 36);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Exportar como PDF";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnPDF.Location = new System.Drawing.Point(16, 393);
+            this.btnPDF.Name = "btnPDF";
+            this.btnPDF.Size = new System.Drawing.Size(210, 36);
+            this.btnPDF.TabIndex = 4;
+            this.btnPDF.Text = "Exportar como PDF";
+            this.btnPDF.UseVisualStyleBackColor = true;
             // 
             // frmReporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(611, 482);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnPDF);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnTXT);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Name = "frmReporte";
@@ -128,8 +128,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnTXT;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnPDF;
     }
 }
