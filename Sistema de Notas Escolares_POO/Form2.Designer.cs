@@ -90,6 +90,7 @@
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnEditar
             // 
@@ -141,6 +142,7 @@
             this.btnReportes.Text = "Ver Reportes";
             this.btnReportes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnReportes.UseVisualStyleBackColor = true;
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
             // btnMaterias
             // 
@@ -153,6 +155,7 @@
             this.btnMaterias.Text = "Administrar Materias";
             this.btnMaterias.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMaterias.UseVisualStyleBackColor = true;
+            this.btnMaterias.Click += new System.EventHandler(this.btnMaterias_Click);
             // 
             // btnNuevoAlumn
             // 

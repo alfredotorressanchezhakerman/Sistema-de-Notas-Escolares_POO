@@ -45,5 +45,24 @@ namespace Sistema_de_Notas_Escolares_POO
             frmCalificaciones Calificaciones = new frmCalificaciones();
             Calificaciones.Show();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMaterias_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmMaterias Materia = new frmMaterias();
+            Materia.Show();
+        }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmReporte Reporte = new frmReporte();
+            Reporte.Show();
+        }
     }
 }
