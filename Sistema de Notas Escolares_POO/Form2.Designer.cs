@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -75,71 +76,94 @@
             this.panel2.Controls.Add(this.btnNuevoAlumn);
             this.panel2.Location = new System.Drawing.Point(3, 376);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(694, 156);
+            this.panel2.Size = new System.Drawing.Size(694, 170);
             this.panel2.TabIndex = 1;
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(583, 111);
+            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
+            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSalir.Location = new System.Drawing.Point(583, 96);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(101, 35);
+            this.btnSalir.Size = new System.Drawing.Size(101, 60);
             this.btnSalir.TabIndex = 6;
             this.btnSalir.Text = "Salir";
+            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSalir.UseVisualStyleBackColor = true;
             // 
             // btnEditar
             // 
+            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
+            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnEditar.Location = new System.Drawing.Point(15, 96);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(101, 47);
+            this.btnEditar.Size = new System.Drawing.Size(101, 60);
             this.btnEditar.TabIndex = 5;
             this.btnEditar.Text = "Editar";
+            this.btnEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.button6_Click);
             // 
             // btnEliminar
             // 
+            this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
+            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnEliminar.Location = new System.Drawing.Point(136, 11);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(101, 52);
+            this.btnEliminar.Size = new System.Drawing.Size(101, 62);
             this.btnEliminar.TabIndex = 4;
             this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnCalificaciones
             // 
+            this.btnCalificaciones.Image = ((System.Drawing.Image)(resources.GetObject("btnCalificaciones.Image")));
+            this.btnCalificaciones.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnCalificaciones.Location = new System.Drawing.Point(136, 96);
             this.btnCalificaciones.Name = "btnCalificaciones";
-            this.btnCalificaciones.Size = new System.Drawing.Size(101, 47);
+            this.btnCalificaciones.Size = new System.Drawing.Size(101, 60);
             this.btnCalificaciones.TabIndex = 3;
             this.btnCalificaciones.Text = "Calificaciones";
+            this.btnCalificaciones.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCalificaciones.UseVisualStyleBackColor = true;
+            this.btnCalificaciones.Click += new System.EventHandler(this.btnCalificaciones_Click);
             // 
             // btnReportes
             // 
+            this.btnReportes.Image = ((System.Drawing.Image)(resources.GetObject("btnReportes.Image")));
+            this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnReportes.Location = new System.Drawing.Point(262, 96);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(101, 41);
+            this.btnReportes.Size = new System.Drawing.Size(101, 60);
             this.btnReportes.TabIndex = 2;
             this.btnReportes.Text = "Ver Reportes";
+            this.btnReportes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnReportes.UseVisualStyleBackColor = true;
             // 
             // btnMaterias
             // 
+            this.btnMaterias.Image = ((System.Drawing.Image)(resources.GetObject("btnMaterias.Image")));
+            this.btnMaterias.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnMaterias.Location = new System.Drawing.Point(262, 11);
             this.btnMaterias.Name = "btnMaterias";
-            this.btnMaterias.Size = new System.Drawing.Size(101, 52);
+            this.btnMaterias.Size = new System.Drawing.Size(101, 62);
             this.btnMaterias.TabIndex = 1;
             this.btnMaterias.Text = "Administrar Materias";
+            this.btnMaterias.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMaterias.UseVisualStyleBackColor = true;
             // 
             // btnNuevoAlumn
             // 
+            this.btnNuevoAlumn.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevoAlumn.Image")));
+            this.btnNuevoAlumn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnNuevoAlumn.Location = new System.Drawing.Point(15, 11);
             this.btnNuevoAlumn.Name = "btnNuevoAlumn";
-            this.btnNuevoAlumn.Size = new System.Drawing.Size(101, 52);
+            this.btnNuevoAlumn.Size = new System.Drawing.Size(101, 62);
             this.btnNuevoAlumn.TabIndex = 0;
             this.btnNuevoAlumn.Text = "Nuevo Alumno";
+            this.btnNuevoAlumn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnNuevoAlumn.UseVisualStyleBackColor = true;
             this.btnNuevoAlumn.Click += new System.EventHandler(this.btnNuevoAlumn_Click);
             // 
@@ -164,7 +188,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(699, 534);
+            this.ClientSize = new System.Drawing.Size(699, 552);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
