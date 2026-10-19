@@ -35,12 +35,14 @@
             this.btnTXT = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnPDF = new System.Windows.Forms.Button();
+            this.cmbMateria = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.cmbMateria);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(2, 3);
             this.panel1.Name = "panel1";
@@ -103,6 +105,14 @@
             this.btnPDF.Text = "Exportar como PDF";
             this.btnPDF.UseVisualStyleBackColor = true;
             // 
+            // cmbMateria
+            // 
+            this.cmbMateria.FormattingEnabled = true;
+            this.cmbMateria.Location = new System.Drawing.Point(169, 14);
+            this.cmbMateria.Name = "cmbMateria";
+            this.cmbMateria.Size = new System.Drawing.Size(178, 21);
+            this.cmbMateria.TabIndex = 1;
+            // 
             // frmReporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -131,5 +141,6 @@
         private System.Windows.Forms.Button btnTXT;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnPDF;
+        private System.Windows.Forms.ComboBox cmbMateria;
     }
 }
