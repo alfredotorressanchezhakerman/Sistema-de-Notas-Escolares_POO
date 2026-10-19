@@ -33,5 +33,17 @@ namespace Sistema_de_Notas_Escolares_POO
             frmAlumno Alumno = new frmAlumno();
             Alumno.Show();
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnCalificaciones_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmCalificaciones Calificaciones = new frmCalificaciones();
+            Calificaciones.Show();
+        }
     }
 }

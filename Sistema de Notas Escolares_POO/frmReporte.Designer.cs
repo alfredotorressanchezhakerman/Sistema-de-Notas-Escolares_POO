@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReporte));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -80,27 +81,33 @@
             // 
             // btnTXT
             // 
+            this.btnTXT.Image = ((System.Drawing.Image)(resources.GetObject("btnTXT.Image")));
+            this.btnTXT.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTXT.Location = new System.Drawing.Point(16, 350);
             this.btnTXT.Name = "btnTXT";
-            this.btnTXT.Size = new System.Drawing.Size(210, 37);
+            this.btnTXT.Size = new System.Drawing.Size(210, 49);
             this.btnTXT.TabIndex = 2;
             this.btnTXT.Text = "Guardar Como TXT";
             this.btnTXT.UseVisualStyleBackColor = true;
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(16, 435);
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelar.Location = new System.Drawing.Point(12, 460);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(210, 35);
+            this.btnCancelar.Size = new System.Drawing.Size(210, 44);
             this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
             // btnPDF
             // 
-            this.btnPDF.Location = new System.Drawing.Point(16, 393);
+            this.btnPDF.Image = ((System.Drawing.Image)(resources.GetObject("btnPDF.Image")));
+            this.btnPDF.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPDF.Location = new System.Drawing.Point(16, 405);
             this.btnPDF.Name = "btnPDF";
-            this.btnPDF.Size = new System.Drawing.Size(210, 36);
+            this.btnPDF.Size = new System.Drawing.Size(206, 49);
             this.btnPDF.TabIndex = 4;
             this.btnPDF.Text = "Exportar como PDF";
             this.btnPDF.UseVisualStyleBackColor = true;
@@ -117,7 +124,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(611, 482);
+            this.ClientSize = new System.Drawing.Size(611, 507);
             this.Controls.Add(this.btnPDF);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnTXT);
