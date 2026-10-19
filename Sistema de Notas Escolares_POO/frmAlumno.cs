@@ -16,5 +16,12 @@ namespace Sistema_de_Notas_Escolares_POO
         {
             InitializeComponent();
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 Regresar = new Form2();
+            Regresar.Show();
+        }
     }
 }
