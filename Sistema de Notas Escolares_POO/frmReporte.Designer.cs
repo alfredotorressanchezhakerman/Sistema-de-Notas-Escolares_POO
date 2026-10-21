@@ -33,7 +33,7 @@
             this.cmbMateria = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rtbReporte = new System.Windows.Forms.RichTextBox();
             this.btnTXT = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnPDF = new System.Windows.Forms.Button();
@@ -70,7 +70,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.richTextBox1);
+            this.groupBox1.Controls.Add(this.rtbReporte);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(2, 66);
             this.groupBox1.Name = "groupBox1";
@@ -79,13 +79,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Reporte General";
             // 
-            // richTextBox1
+            // rtbReporte
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(6, 19);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(487, 250);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.rtbReporte.Location = new System.Drawing.Point(6, 19);
+            this.rtbReporte.Name = "rtbReporte";
+            this.rtbReporte.Size = new System.Drawing.Size(487, 250);
+            this.rtbReporte.TabIndex = 0;
+            this.rtbReporte.Text = "";
             // 
             // btnTXT
             // 
@@ -146,7 +146,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtbReporte;
         private System.Windows.Forms.Button btnTXT;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnPDF;
