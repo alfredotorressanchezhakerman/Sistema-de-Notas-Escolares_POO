@@ -196,6 +196,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema de Calificaciones Escolares";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

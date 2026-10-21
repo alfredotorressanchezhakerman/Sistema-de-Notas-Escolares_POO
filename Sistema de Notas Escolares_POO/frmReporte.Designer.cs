@@ -30,13 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReporte));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbMateria = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btnTXT = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnPDF = new System.Windows.Forms.Button();
-            this.cmbMateria = new System.Windows.Forms.ComboBox();
+            this.btnRegresa = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -49,6 +50,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(602, 57);
             this.panel1.TabIndex = 0;
+            // 
+            // cmbMateria
+            // 
+            this.cmbMateria.FormattingEnabled = true;
+            this.cmbMateria.Location = new System.Drawing.Point(169, 14);
+            this.cmbMateria.Name = "cmbMateria";
+            this.cmbMateria.Size = new System.Drawing.Size(178, 21);
+            this.cmbMateria.TabIndex = 1;
             // 
             // label1
             // 
@@ -112,25 +121,30 @@
             this.btnPDF.Text = "Exportar como PDF";
             this.btnPDF.UseVisualStyleBackColor = true;
             // 
-            // cmbMateria
+            // btnRegresa
             // 
-            this.cmbMateria.FormattingEnabled = true;
-            this.cmbMateria.Location = new System.Drawing.Point(169, 14);
-            this.cmbMateria.Name = "cmbMateria";
-            this.cmbMateria.Size = new System.Drawing.Size(178, 21);
-            this.cmbMateria.TabIndex = 1;
+            this.btnRegresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresa.Location = new System.Drawing.Point(274, 471);
+            this.btnRegresa.Name = "btnRegresa";
+            this.btnRegresa.Size = new System.Drawing.Size(113, 23);
+            this.btnRegresa.TabIndex = 5;
+            this.btnRegresa.Text = "<--- Back";
+            this.btnRegresa.UseVisualStyleBackColor = true;
+            this.btnRegresa.Click += new System.EventHandler(this.btnRegresa_Click);
             // 
             // frmReporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(611, 507);
+            this.Controls.Add(this.btnRegresa);
             this.Controls.Add(this.btnPDF);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnTXT);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Name = "frmReporte";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reportes";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -149,5 +163,6 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnPDF;
         private System.Windows.Forms.ComboBox cmbMateria;
+        private System.Windows.Forms.Button btnRegresa;
     }
 }
