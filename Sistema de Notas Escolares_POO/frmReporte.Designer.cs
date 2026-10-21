@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReporte));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cmbMateria = new System.Windows.Forms.ComboBox();
+            this.cmbMateriaFiltrar = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -43,20 +43,20 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.cmbMateria);
+            this.panel1.Controls.Add(this.cmbMateriaFiltrar);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(2, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(602, 57);
             this.panel1.TabIndex = 0;
             // 
-            // cmbMateria
+            // cmbMateriaFiltrar
             // 
-            this.cmbMateria.FormattingEnabled = true;
-            this.cmbMateria.Location = new System.Drawing.Point(169, 14);
-            this.cmbMateria.Name = "cmbMateria";
-            this.cmbMateria.Size = new System.Drawing.Size(178, 21);
-            this.cmbMateria.TabIndex = 1;
+            this.cmbMateriaFiltrar.FormattingEnabled = true;
+            this.cmbMateriaFiltrar.Location = new System.Drawing.Point(169, 14);
+            this.cmbMateriaFiltrar.Name = "cmbMateriaFiltrar";
+            this.cmbMateriaFiltrar.Size = new System.Drawing.Size(178, 21);
+            this.cmbMateriaFiltrar.TabIndex = 1;
             // 
             // label1
             // 
@@ -150,6 +150,6 @@
         private System.Windows.Forms.Button btnTXT;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnPDF;
-        private System.Windows.Forms.ComboBox cmbMateria;
+        private System.Windows.Forms.ComboBox cmbMateriaFiltrar;
     }
 }

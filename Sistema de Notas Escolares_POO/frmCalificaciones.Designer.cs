@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCalificaciones));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRegresar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCalificacionAlumno = new System.Windows.Forms.TextBox();
+            this.txtMateriaAlumno = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnRegresar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -57,6 +57,17 @@
             this.panel1.Size = new System.Drawing.Size(525, 425);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.Location = new System.Drawing.Point(395, 365);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(127, 44);
+            this.btnRegresar.TabIndex = 7;
+            this.btnRegresar.Text = "<--- Regresar";
+            this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // btnEliminar
             // 
@@ -94,8 +105,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtCalificacionAlumno);
+            this.groupBox1.Controls.Add(this.txtMateriaAlumno);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.dataGridView1);
@@ -107,22 +118,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Alumno";
             // 
-            // textBox2
+            // txtCalificacionAlumno
             // 
-            this.textBox2.Location = new System.Drawing.Point(119, 243);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(263, 29);
-            this.textBox2.TabIndex = 4;
+            this.txtCalificacionAlumno.Location = new System.Drawing.Point(119, 243);
+            this.txtCalificacionAlumno.Multiline = true;
+            this.txtCalificacionAlumno.Name = "txtCalificacionAlumno";
+            this.txtCalificacionAlumno.Size = new System.Drawing.Size(263, 29);
+            this.txtCalificacionAlumno.TabIndex = 4;
             // 
-            // textBox1
+            // txtMateriaAlumno
             // 
-            this.textBox1.Location = new System.Drawing.Point(119, 200);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(263, 29);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtMateriaAlumno.Location = new System.Drawing.Point(119, 200);
+            this.txtMateriaAlumno.Multiline = true;
+            this.txtMateriaAlumno.Name = "txtMateriaAlumno";
+            this.txtMateriaAlumno.Size = new System.Drawing.Size(263, 29);
+            this.txtMateriaAlumno.TabIndex = 3;
+            this.txtMateriaAlumno.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -150,17 +161,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(388, 150);
             this.dataGridView1.TabIndex = 0;
             // 
-            // btnRegresar
-            // 
-            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(395, 365);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(127, 44);
-            this.btnRegresar.TabIndex = 7;
-            this.btnRegresar.Text = "<--- Regresar";
-            this.btnRegresar.UseVisualStyleBackColor = true;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
-            // 
             // frmCalificaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -184,8 +184,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCalificacionAlumno;
+        private System.Windows.Forms.TextBox txtMateriaAlumno;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCancelar;

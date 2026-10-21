@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMaterias));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNuevaMateria = new System.Windows.Forms.TextBox();
             this.listMaterias = new System.Windows.Forms.ListBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -59,13 +59,13 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Nueva Materia:";
             // 
-            // textBox2
+            // txtNuevaMateria
             // 
-            this.textBox2.Location = new System.Drawing.Point(221, 133);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(264, 23);
-            this.textBox2.TabIndex = 3;
+            this.txtNuevaMateria.Location = new System.Drawing.Point(221, 133);
+            this.txtNuevaMateria.Multiline = true;
+            this.txtNuevaMateria.Name = "txtNuevaMateria";
+            this.txtNuevaMateria.Size = new System.Drawing.Size(264, 23);
+            this.txtNuevaMateria.TabIndex = 3;
             // 
             // listMaterias
             // 
@@ -129,7 +129,7 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.listMaterias);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtNuevaMateria);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmMaterias";
@@ -144,7 +144,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNuevaMateria;
         private System.Windows.Forms.ListBox listMaterias;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnCancelar;
