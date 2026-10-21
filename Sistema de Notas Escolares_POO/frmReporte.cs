@@ -17,7 +17,7 @@ namespace Sistema_de_Notas_Escolares_POO
             InitializeComponent();
         }
 
-        private void btnRegresa_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form2 Form2 = new Form2();

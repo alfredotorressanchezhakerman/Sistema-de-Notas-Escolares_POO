@@ -37,7 +37,6 @@
             this.btnTXT = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnPDF = new System.Windows.Forms.Button();
-            this.btnRegresa = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -109,6 +108,7 @@
             this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnPDF
             // 
@@ -121,23 +121,11 @@
             this.btnPDF.Text = "Exportar como PDF";
             this.btnPDF.UseVisualStyleBackColor = true;
             // 
-            // btnRegresa
-            // 
-            this.btnRegresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresa.Location = new System.Drawing.Point(274, 471);
-            this.btnRegresa.Name = "btnRegresa";
-            this.btnRegresa.Size = new System.Drawing.Size(113, 23);
-            this.btnRegresa.TabIndex = 5;
-            this.btnRegresa.Text = "<--- Back";
-            this.btnRegresa.UseVisualStyleBackColor = true;
-            this.btnRegresa.Click += new System.EventHandler(this.btnRegresa_Click);
-            // 
             // frmReporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(611, 507);
-            this.Controls.Add(this.btnRegresa);
             this.Controls.Add(this.btnPDF);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnTXT);
@@ -163,6 +151,5 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnPDF;
         private System.Windows.Forms.ComboBox cmbMateria;
-        private System.Windows.Forms.Button btnRegresa;
     }
 }
