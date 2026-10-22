@@ -67,7 +67,7 @@ namespace Sistema_de_Notas_Escolares_POO
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            
         }
 
 
