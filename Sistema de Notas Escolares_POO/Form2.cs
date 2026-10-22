@@ -120,6 +120,25 @@ namespace Sistema_de_Notas_Escolares_POO
                     return "Alumno: " + Nombre + ", Matrícula: " + Matricula;
                 }
 
+                public void AgregarCalificacion(string materia, double calificacion)
+                {
+                    if (string.IsNullOrWhiteSpace(materia))
+                    {
+                        throw new ArgumentException("La materia no puede estar vacía.", nameof(materia));
+                    }
+                    if (calificacion < 0 || calificacion > 10)
+                    {
+                        throw new ArgumentOutOfRangeException(nameof(calificacion), "La calificación debe estar entre 0 y 10.");
+                    }
+                    if (calificaciones.ContainsKey(materia))
+                    {
+                        calificaciones[materia] = calificacion; // Actualiza la calificación si la materia ya existe
+                    }
+                    else
+                    {
+                        calificaciones.Add(materia, calificacion); // Agrega una nueva materia y calificación
+                    }
+                }
 
             }
         }
