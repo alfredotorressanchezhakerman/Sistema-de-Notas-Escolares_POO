@@ -36,7 +36,7 @@ namespace Sistema_de_Notas_Escolares_POO
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnCalificaciones_Click(object sender, EventArgs e)
@@ -64,5 +64,66 @@ namespace Sistema_de_Notas_Escolares_POO
             frmReporte Reporte = new frmReporte();
             Reporte.Show();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+        public abstract class Persona
+        {
+            public string Matricula { get; protected set; }
+            public string Nombre { get; protected set; }
+
+            public Persona(string matricula, string nombre)
+            {
+                if (string.IsNullOrWhiteSpace(matricula))
+                {
+                    throw new ArgumentException("La matrícula no puede estar vacía.", nameof(matricula));
+                }
+                if (string.IsNullOrWhiteSpace(nombre))
+                {
+                    throw new ArgumentException("El nombre no puede estar vacío.", nameof(nombre));
+                }
+
+                Matricula = matricula;
+                Nombre = nombre;
+            }
+            public abstract string MostrarDatos();
+
+            public override string ToString()
+            {
+                return Matricula + " - " + Nombre;
+            }
+
+
+            //====================================================================
+            //CLASE ALUMNO HIJA 
+            //====================================================================
+            public class Alumno : Persona
+            {
+                private Dictionary<string, double> calificaciones;
+
+                public Dictionary<string, double> Calificaciones
+                {
+                    get { return calificaciones; }
+                }
+
+                public Alumno(string matricula, string nombre) : base(matricula, nombre)
+                {
+                    calificaciones = new Dictionary<string, double>();
+                }
+
+                public override string MostrarDatos()
+                {
+                    return "Alumno: " + Nombre + ", Matrícula: " + Matricula;
+                }
+
+
+            }
+        }
+
     }
+    
 }

@@ -31,12 +31,11 @@ namespace Sistema_de_Notas_Escolares_POO
         {
 
         }
-
+        
         private void frmCalificaciones_Load(object sender, EventArgs e)
         {
 
         }
-
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             this.Hide();
