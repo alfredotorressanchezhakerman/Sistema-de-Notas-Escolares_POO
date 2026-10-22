@@ -115,10 +115,7 @@ namespace Sistema_de_Notas_Escolares_POO
                     calificaciones = new Dictionary<string, double>();
                 }
 
-                public override string MostrarDatos()
-                {
-                    return "Alumno: " + Nombre + ", Matrícula: " + Matricula;
-                }
+                
 
                 public void AgregarCalificacion(string materia, double calificacion)
                 {
@@ -139,6 +136,26 @@ namespace Sistema_de_Notas_Escolares_POO
                         calificaciones.Add(materia, calificacion); // Agrega una nueva materia y calificación
                     }
                 }
+                public double ObtenerCalificacion(string materia)
+                {
+                    if (Calificaciones.Count == 0)  return 0.0; 
+                         // Retorna 0 si no hay calificaciones registradas
+                    
+                    double suma = 0;
+
+                    foreach (var calificacion in Calificaciones.Values)
+                    {
+                        suma += calificacion;
+                    }
+                    
+                    return suma / Calificaciones.Count; // Retorna el promedio de calificaciones
+                }
+
+                public override string MostrarDatos()
+                {
+                    return "Alumno: " + Nombre + ", Matrícula: " + Matricula + ", Promedio: " + ObtenerCalificacion("").ToString("F2");
+                }
+
 
             }
         }
