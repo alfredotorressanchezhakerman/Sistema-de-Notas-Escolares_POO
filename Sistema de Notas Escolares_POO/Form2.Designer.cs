@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblPromedioGeneral = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblTotalAlumn = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnSalir = new System.Windows.Forms.Button();
@@ -41,10 +45,6 @@
             this.btnNuevoAlumn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lblTotalAlumn = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblPromedioGeneral = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -62,6 +62,46 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(694, 100);
             this.panel1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(202, 35);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(18, 25);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "|";
+            // 
+            // lblPromedioGeneral
+            // 
+            this.lblPromedioGeneral.AutoSize = true;
+            this.lblPromedioGeneral.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPromedioGeneral.Location = new System.Drawing.Point(428, 35);
+            this.lblPromedioGeneral.Name = "lblPromedioGeneral";
+            this.lblPromedioGeneral.Size = new System.Drawing.Size(25, 25);
+            this.lblPromedioGeneral.TabIndex = 3;
+            this.lblPromedioGeneral.Text = "0";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(214, 35);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(208, 25);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Promedio General:";
+            // 
+            // lblTotalAlumn
+            // 
+            this.lblTotalAlumn.AutoSize = true;
+            this.lblTotalAlumn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalAlumn.Location = new System.Drawing.Point(183, 35);
+            this.lblTotalAlumn.Name = "lblTotalAlumn";
+            this.lblTotalAlumn.Size = new System.Drawing.Size(25, 25);
+            this.lblTotalAlumn.TabIndex = 1;
+            this.lblTotalAlumn.Text = "0";
             // 
             // label1
             // 
@@ -195,46 +235,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(694, 282);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // lblTotalAlumn
-            // 
-            this.lblTotalAlumn.AutoSize = true;
-            this.lblTotalAlumn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalAlumn.Location = new System.Drawing.Point(183, 35);
-            this.lblTotalAlumn.Name = "lblTotalAlumn";
-            this.lblTotalAlumn.Size = new System.Drawing.Size(25, 25);
-            this.lblTotalAlumn.TabIndex = 1;
-            this.lblTotalAlumn.Text = "0";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(214, 35);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(208, 25);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Promedio General:";
-            // 
-            // lblPromedioGeneral
-            // 
-            this.lblPromedioGeneral.AutoSize = true;
-            this.lblPromedioGeneral.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPromedioGeneral.Location = new System.Drawing.Point(428, 35);
-            this.lblPromedioGeneral.Name = "lblPromedioGeneral";
-            this.lblPromedioGeneral.Size = new System.Drawing.Size(25, 25);
-            this.lblPromedioGeneral.TabIndex = 3;
-            this.lblPromedioGeneral.Text = "0";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(202, 35);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(18, 25);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "|";
             // 
             // Form2
             // 
