@@ -19,7 +19,7 @@ namespace Sistema_de_Notas_Escolares_POO
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            //Fhaaa
         }
 
         private void button6_Click(object sender, EventArgs e)
