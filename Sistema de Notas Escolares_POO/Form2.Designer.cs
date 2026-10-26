@@ -130,6 +130,7 @@
             // 
             // btnSalir
             // 
+            this.btnSalir.BackColor = System.Drawing.Color.PowderBlue;
             this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnSalir.Location = new System.Drawing.Point(583, 96);
@@ -138,11 +139,12 @@
             this.btnSalir.TabIndex = 6;
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnEditar
             // 
+            this.btnEditar.BackColor = System.Drawing.Color.PowderBlue;
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnEditar.Location = new System.Drawing.Point(15, 96);
@@ -151,11 +153,12 @@
             this.btnEditar.TabIndex = 5;
             this.btnEditar.Text = "Editar";
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.UseVisualStyleBackColor = false;
             this.btnEditar.Click += new System.EventHandler(this.button6_Click);
             // 
             // btnEliminar
             // 
+            this.btnEliminar.BackColor = System.Drawing.Color.PowderBlue;
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnEliminar.Location = new System.Drawing.Point(136, 11);
@@ -164,11 +167,12 @@
             this.btnEliminar.TabIndex = 4;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnCalificaciones
             // 
+            this.btnCalificaciones.BackColor = System.Drawing.Color.PowderBlue;
             this.btnCalificaciones.Image = ((System.Drawing.Image)(resources.GetObject("btnCalificaciones.Image")));
             this.btnCalificaciones.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnCalificaciones.Location = new System.Drawing.Point(136, 96);
@@ -177,11 +181,12 @@
             this.btnCalificaciones.TabIndex = 3;
             this.btnCalificaciones.Text = "Calificaciones";
             this.btnCalificaciones.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnCalificaciones.UseVisualStyleBackColor = true;
+            this.btnCalificaciones.UseVisualStyleBackColor = false;
             this.btnCalificaciones.Click += new System.EventHandler(this.btnCalificaciones_Click);
             // 
             // btnReportes
             // 
+            this.btnReportes.BackColor = System.Drawing.Color.PowderBlue;
             this.btnReportes.Image = ((System.Drawing.Image)(resources.GetObject("btnReportes.Image")));
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnReportes.Location = new System.Drawing.Point(262, 96);
@@ -190,11 +195,12 @@
             this.btnReportes.TabIndex = 2;
             this.btnReportes.Text = "Ver Reportes";
             this.btnReportes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnReportes.UseVisualStyleBackColor = true;
+            this.btnReportes.UseVisualStyleBackColor = false;
             this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
             // btnMaterias
             // 
+            this.btnMaterias.BackColor = System.Drawing.Color.PowderBlue;
             this.btnMaterias.Image = ((System.Drawing.Image)(resources.GetObject("btnMaterias.Image")));
             this.btnMaterias.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnMaterias.Location = new System.Drawing.Point(262, 11);
@@ -203,11 +209,12 @@
             this.btnMaterias.TabIndex = 1;
             this.btnMaterias.Text = "Administrar Materias";
             this.btnMaterias.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnMaterias.UseVisualStyleBackColor = true;
+            this.btnMaterias.UseVisualStyleBackColor = false;
             this.btnMaterias.Click += new System.EventHandler(this.btnMaterias_Click);
             // 
             // btnNuevoAlumn
             // 
+            this.btnNuevoAlumn.BackColor = System.Drawing.Color.PowderBlue;
             this.btnNuevoAlumn.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevoAlumn.Image")));
             this.btnNuevoAlumn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnNuevoAlumn.Location = new System.Drawing.Point(15, 11);
@@ -216,7 +223,7 @@
             this.btnNuevoAlumn.TabIndex = 0;
             this.btnNuevoAlumn.Text = "Nuevo Alumno";
             this.btnNuevoAlumn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnNuevoAlumn.UseVisualStyleBackColor = true;
+            this.btnNuevoAlumn.UseVisualStyleBackColor = false;
             this.btnNuevoAlumn.Click += new System.EventHandler(this.btnNuevoAlumn_Click);
             // 
             // panel3

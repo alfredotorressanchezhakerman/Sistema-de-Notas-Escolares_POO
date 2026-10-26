@@ -89,6 +89,7 @@
             // 
             // btnTXT
             // 
+            this.btnTXT.BackColor = System.Drawing.Color.PowderBlue;
             this.btnTXT.Image = ((System.Drawing.Image)(resources.GetObject("btnTXT.Image")));
             this.btnTXT.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTXT.Location = new System.Drawing.Point(16, 350);
@@ -96,10 +97,11 @@
             this.btnTXT.Size = new System.Drawing.Size(210, 49);
             this.btnTXT.TabIndex = 2;
             this.btnTXT.Text = "Guardar Como TXT";
-            this.btnTXT.UseVisualStyleBackColor = true;
+            this.btnTXT.UseVisualStyleBackColor = false;
             // 
             // btnCancelar
             // 
+            this.btnCancelar.BackColor = System.Drawing.Color.PowderBlue;
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.Location = new System.Drawing.Point(12, 460);
@@ -107,11 +109,12 @@
             this.btnCancelar.Size = new System.Drawing.Size(210, 44);
             this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnPDF
             // 
+            this.btnPDF.BackColor = System.Drawing.Color.PowderBlue;
             this.btnPDF.Image = ((System.Drawing.Image)(resources.GetObject("btnPDF.Image")));
             this.btnPDF.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPDF.Location = new System.Drawing.Point(16, 405);
@@ -119,7 +122,7 @@
             this.btnPDF.Size = new System.Drawing.Size(206, 49);
             this.btnPDF.TabIndex = 4;
             this.btnPDF.Text = "Exportar como PDF";
-            this.btnPDF.UseVisualStyleBackColor = true;
+            this.btnPDF.UseVisualStyleBackColor = false;
             // 
             // frmReporte
             // 
