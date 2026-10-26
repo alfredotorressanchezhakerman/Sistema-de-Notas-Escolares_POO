@@ -111,11 +111,13 @@
             // 
             // btnRegresar
             // 
+            this.btnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegresar.Image")));
+            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegresar.Location = new System.Drawing.Point(312, 208);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(130, 40);
             this.btnRegresar.TabIndex = 10;
-            this.btnRegresar.Text = "<--- Regresar";
+            this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = true;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
