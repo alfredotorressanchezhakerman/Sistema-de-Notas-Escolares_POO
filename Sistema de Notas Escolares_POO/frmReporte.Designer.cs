@@ -125,6 +125,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Sistema_de_Notas_Escolares_POO.Properties.Resources._39528156_child_blue_background_with_school_supplies_globe_paints_and_brushes_books_hand_drawn;
             this.ClientSize = new System.Drawing.Size(611, 507);
             this.Controls.Add(this.btnPDF);
             this.Controls.Add(this.btnCancelar);

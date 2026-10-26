@@ -138,7 +138,7 @@ namespace Sistema_de_Notas_Escolares_POO
                 }
                 public double ObtenerCalificacion(string materia)
                 {
-                    if (Calificaciones.Count == 0)  return 0.0; 
+                    if (Calificaciones.Count == 0)  return 0; 
                          // Retorna 0 si no hay calificaciones registradas
                     
                     double suma = 0;

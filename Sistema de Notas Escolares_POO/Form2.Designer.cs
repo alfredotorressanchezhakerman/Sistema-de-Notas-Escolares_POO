@@ -53,6 +53,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = global::Sistema_de_Notas_Escolares_POO.Properties.Resources._39528156_child_blue_background_with_school_supplies_globe_paints_and_brushes_books_hand_drawn;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.lblPromedioGeneral);
             this.panel1.Controls.Add(this.label3);

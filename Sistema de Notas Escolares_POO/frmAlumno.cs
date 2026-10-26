@@ -61,5 +61,10 @@ namespace Sistema_de_Notas_Escolares_POO
                 throw;
             }
         }
+
+        private void frmAlumno_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

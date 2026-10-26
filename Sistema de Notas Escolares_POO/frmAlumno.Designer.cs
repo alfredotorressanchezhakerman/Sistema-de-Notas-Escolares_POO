@@ -101,6 +101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Sistema_de_Notas_Escolares_POO.Properties.Resources._39528156_child_blue_background_with_school_supplies_globe_paints_and_brushes_books_hand_drawn;
             this.ClientSize = new System.Drawing.Size(387, 236);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtMatricula);
@@ -111,6 +112,7 @@
             this.Name = "frmAlumno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nuevo Alumno";
+            this.Load += new System.EventHandler(this.frmAlumno_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
