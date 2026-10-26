@@ -53,7 +53,9 @@ namespace Sistema_de_Notas_Escolares_POO
 
                 MessageBox.Show("Alumno agregado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                this.Close();
+                this.Hide();
+                frmAlumno Alumno = new frmAlumno();
+                Alumno.Show();
             }
             catch (Exception ex)
             {
