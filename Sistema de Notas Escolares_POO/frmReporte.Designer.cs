@@ -43,6 +43,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = global::Sistema_de_Notas_Escolares_POO.Properties.Resources.Captura_de_pantalla_2026_11_10_083622;
             this.panel1.Controls.Add(this.cmbMateriaFiltrar);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(2, 3);
@@ -70,6 +71,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackgroundImage = global::Sistema_de_Notas_Escolares_POO.Properties.Resources.Captura_de_pantalla_2026_11_10_083622;
             this.groupBox1.Controls.Add(this.rtbReporte);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(2, 66);

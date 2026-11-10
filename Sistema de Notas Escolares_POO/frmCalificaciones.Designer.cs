@@ -112,6 +112,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackgroundImage = global::Sistema_de_Notas_Escolares_POO.Properties.Resources.Captura_de_pantalla_2026_11_10_083622;
             this.groupBox1.Controls.Add(this.txtCalificacionAlumno);
             this.groupBox1.Controls.Add(this.txtMateriaAlumno);
             this.groupBox1.Controls.Add(this.label2);

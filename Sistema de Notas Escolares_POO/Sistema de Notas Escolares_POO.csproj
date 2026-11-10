@@ -119,5 +119,11 @@
   <ItemGroup>
     <None Include="Resources\39528156-child-blue-background-with-school-supplies-globe-paints-and-brushes-books-hand-drawn.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noTA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2026-11-10 083622.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
