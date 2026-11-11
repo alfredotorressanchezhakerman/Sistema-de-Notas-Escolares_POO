@@ -92,6 +92,7 @@
             // btnTXT
             // 
             this.btnTXT.BackColor = System.Drawing.Color.PowderBlue;
+            this.btnTXT.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTXT.Image = ((System.Drawing.Image)(resources.GetObject("btnTXT.Image")));
             this.btnTXT.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTXT.Location = new System.Drawing.Point(16, 350);
@@ -104,6 +105,7 @@
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.PowderBlue;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.Location = new System.Drawing.Point(12, 460);
@@ -117,6 +119,7 @@
             // btnPDF
             // 
             this.btnPDF.BackColor = System.Drawing.Color.PowderBlue;
+            this.btnPDF.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPDF.Image = ((System.Drawing.Image)(resources.GetObject("btnPDF.Image")));
             this.btnPDF.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPDF.Location = new System.Drawing.Point(16, 405);

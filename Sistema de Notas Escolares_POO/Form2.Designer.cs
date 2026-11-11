@@ -88,6 +88,7 @@
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.PowderBlue;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnSalir.Location = new System.Drawing.Point(583, 96);
@@ -102,6 +103,7 @@
             // btnEditar
             // 
             this.btnEditar.BackColor = System.Drawing.Color.PowderBlue;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnEditar.Location = new System.Drawing.Point(15, 96);
@@ -116,6 +118,7 @@
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.PowderBlue;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnEliminar.Location = new System.Drawing.Point(136, 11);
@@ -130,6 +133,7 @@
             // btnCalificaciones
             // 
             this.btnCalificaciones.BackColor = System.Drawing.Color.PowderBlue;
+            this.btnCalificaciones.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCalificaciones.Image = ((System.Drawing.Image)(resources.GetObject("btnCalificaciones.Image")));
             this.btnCalificaciones.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnCalificaciones.Location = new System.Drawing.Point(136, 96);
@@ -144,6 +148,7 @@
             // btnReportes
             // 
             this.btnReportes.BackColor = System.Drawing.Color.PowderBlue;
+            this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnReportes.Image = ((System.Drawing.Image)(resources.GetObject("btnReportes.Image")));
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnReportes.Location = new System.Drawing.Point(262, 96);
@@ -158,6 +163,7 @@
             // btnMaterias
             // 
             this.btnMaterias.BackColor = System.Drawing.Color.PowderBlue;
+            this.btnMaterias.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMaterias.Image = ((System.Drawing.Image)(resources.GetObject("btnMaterias.Image")));
             this.btnMaterias.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnMaterias.Location = new System.Drawing.Point(262, 11);
@@ -172,6 +178,7 @@
             // btnNuevoAlumn
             // 
             this.btnNuevoAlumn.BackColor = System.Drawing.Color.PowderBlue;
+            this.btnNuevoAlumn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnNuevoAlumn.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevoAlumn.Image")));
             this.btnNuevoAlumn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnNuevoAlumn.Location = new System.Drawing.Point(15, 11);

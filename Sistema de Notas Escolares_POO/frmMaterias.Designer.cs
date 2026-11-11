@@ -78,6 +78,7 @@
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.PowderBlue;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEliminar.Location = new System.Drawing.Point(152, 184);
@@ -90,6 +91,7 @@
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.PowderBlue;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancelar.Location = new System.Drawing.Point(312, 162);
@@ -103,6 +105,7 @@
             // btnAceptar
             // 
             this.btnAceptar.BackColor = System.Drawing.Color.PowderBlue;
+            this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAceptar.Image = ((System.Drawing.Image)(resources.GetObject("btnAceptar.Image")));
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAceptar.Location = new System.Drawing.Point(7, 184);
@@ -115,6 +118,7 @@
             // btnRegresar
             // 
             this.btnRegresar.BackColor = System.Drawing.Color.PowderBlue;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegresar.Image")));
             this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegresar.Location = new System.Drawing.Point(312, 208);
