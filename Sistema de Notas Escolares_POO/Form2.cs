@@ -19,7 +19,7 @@ namespace Sistema_de_Notas_Escolares_POO
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            //Fhaaa
+            
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -129,17 +129,17 @@ namespace Sistema_de_Notas_Escolares_POO
                     }
                     if (calificaciones.ContainsKey(materia))
                     {
-                        calificaciones[materia] = calificacion; // Actualiza la calificación si la materia ya existe
+                        calificaciones[materia] = calificacion; 
                     }
                     else
                     {
-                        calificaciones.Add(materia, calificacion); // Agrega una nueva materia y calificación
+                        calificaciones.Add(materia, calificacion); 
                     }
                 }
                 public double ObtenerCalificacion(string materia)
                 {
                     if (Calificaciones.Count == 0)  return 0; 
-                         // Retorna 0 si no hay calificaciones registradas
+                         
                     
                     double suma = 0;
 
@@ -148,7 +148,7 @@ namespace Sistema_de_Notas_Escolares_POO
                         suma += calificacion;
                     }
                     
-                    return suma / Calificaciones.Count; // Retorna el promedio de calificaciones
+                    return suma / Calificaciones.Count; 
                 }
 
                 public override string MostrarDatos()
