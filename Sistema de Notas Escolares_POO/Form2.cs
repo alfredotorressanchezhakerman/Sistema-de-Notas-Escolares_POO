@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -67,9 +68,43 @@ namespace Sistema_de_Notas_Escolares_POO
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            
-        }
+            dvgMenu.Columns.Clear();
+            dvgMenu.Rows.Clear();
+            dvgMenu.Columns.Add("Matricula", "Matricula");
+            dvgMenu.Columns.Add("Nombre", "Nombre");
+            dvgMenu.Columns.Add("Materia", "Materia");
+            dvgMenu.Columns.Add("Calificacion", "Calificacion");
 
+            string rutaArchivo = "Calificaciones.txt";
+            HashSet<string> alumnosUnicos = new HashSet<string>();
+            double sumaCalificaciones = 0;
+            int totalCalificaciones = 0;
+
+            if (File.Exists(rutaArchivo))
+            {
+                string[] lineas = File.ReadAllLines(rutaArchivo);
+                foreach (string linea in lineas)
+                {
+                    string[] datos = linea.Split(',');
+                    if (datos.Length >= 4)
+                    {
+                        dvgMenu.Rows.Add(datos[0], datos[1], datos[2], datos[3]);
+                        alumnosUnicos.Add(datos[0]); 
+                        if (double.TryParse(datos[3], out double calif))
+                        {
+                            sumaCalificaciones += calif;
+                            totalCalificaciones++;
+                        }
+                    }
+                }
+            }
+
+            lblTotalAlumn.Text = alumnosUnicos.Count.ToString();
+
+            lblPromedioGeneral.Text = totalCalificaciones > 0
+                ? (sumaCalificaciones / totalCalificaciones).ToString("F2")
+                : "0.00";
+        }
 
         public abstract class Persona
         {
@@ -139,7 +174,6 @@ namespace Sistema_de_Notas_Escolares_POO
                 public double ObtenerCalificacion(string materia)
                 {
                     if (Calificaciones.Count == 0)  return 0; 
-                         
                     
                     double suma = 0;
 
@@ -160,6 +194,15 @@ namespace Sistema_de_Notas_Escolares_POO
             }
         }
 
+        private void lblTotalAlumn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPromedioGeneral_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }
