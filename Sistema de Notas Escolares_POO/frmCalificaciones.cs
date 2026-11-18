@@ -42,26 +42,7 @@ namespace Sistema_de_Notas_Escolares_POO
         
         private void frmCalificaciones_Load(object sender, EventArgs e)
         {
-            dgvAlumno.Columns.Clear();
-            dgvAlumno.Rows.Clear();
-            dgvAlumno.Columns.Add("Matricula", "Matrícula");
-            dgvAlumno.Columns.Add("Nombre", "Nombre");
-            dgvAlumno.Columns.Add("Materia", "Materia");
-            dgvAlumno.Columns.Add("Calificacion", "Calificación");
-
-            string rutaArchivo = "Alumnos.txt";
-            if (File.Exists(rutaArchivo))
-            {
-                string[] lineas = File.ReadAllLines(rutaArchivo);
-                foreach (string linea in lineas)
-                {
-                    string[] datos = linea.Split(',');
-                    if (datos.Length >= 2)
-                    {
-                        dgvAlumno.Rows.Add(datos[0], datos[1], "", "");
-                    }
-                }
-            }
+            
         }
         private void btnRegresar_Click(object sender, EventArgs e)
         {
