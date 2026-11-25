@@ -33,8 +33,8 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtMateriaAlumno = new System.Windows.Forms.TextBox();
             this.dgvClearAlumno = new System.Windows.Forms.DataGridView();
+            this.txtMateriaAlumno = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClearAlumno)).BeginInit();
@@ -62,6 +62,7 @@
             this.btnEliminar.TabIndex = 6;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnCancelar
             // 
@@ -90,14 +91,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Buscar Alumno";
             // 
-            // txtMateriaAlumno
-            // 
-            this.txtMateriaAlumno.Location = new System.Drawing.Point(136, 2);
-            this.txtMateriaAlumno.Multiline = true;
-            this.txtMateriaAlumno.Name = "txtMateriaAlumno";
-            this.txtMateriaAlumno.Size = new System.Drawing.Size(263, 29);
-            this.txtMateriaAlumno.TabIndex = 3;
-            // 
             // dgvClearAlumno
             // 
             this.dgvClearAlumno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -105,6 +98,14 @@
             this.dgvClearAlumno.Name = "dgvClearAlumno";
             this.dgvClearAlumno.Size = new System.Drawing.Size(482, 263);
             this.dgvClearAlumno.TabIndex = 0;
+            // 
+            // txtMateriaAlumno
+            // 
+            this.txtMateriaAlumno.Location = new System.Drawing.Point(136, 2);
+            this.txtMateriaAlumno.Multiline = true;
+            this.txtMateriaAlumno.Name = "txtMateriaAlumno";
+            this.txtMateriaAlumno.Size = new System.Drawing.Size(263, 29);
+            this.txtMateriaAlumno.TabIndex = 3;
             // 
             // EliminarAlumno
             // 

@@ -1,17 +1,57 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
 
 namespace Sistema_de_Notas_Escolares_POO
 {
     public partial class Form2 : Form
     {
+        private const string RutaArchivo = "Alumnos.txt";
         public Form2()
         {
             InitializeComponent();
         }
 
+        private void CargarResumen()
+        {
+            dvgMenu.Columns.Clear();
+            dvgMenu.Columns.Add("Matricula", "Matrícula");
+            dvgMenu.Columns.Add("Nombre", "Nombre");
+            dvgMenu.Columns.Add("Materia", "Materia");
+            dvgMenu.Columns.Add("Calificacion", "Calificación");
+
+            HashSet<string> alumnosUnicos = new HashSet<string>();
+            double sumaCalificaciones = 0;
+            int totalCalificaciones = 0;
+
+            if (File.Exists(RutaArchivo))
+            {
+                foreach (string linea in File.ReadAllLines(RutaArchivo))
+                {
+                    if (string.IsNullOrWhiteSpace(linea)) continue;
+
+                    string[] datos = linea.Split(',');
+                    if (datos.Length >= 4)
+                    {
+                        dvgMenu.Rows.Add(datos[0], datos[1], datos[2], datos[3]);
+                        alumnosUnicos.Add(datos[0]);
+
+                        if (double.TryParse(datos[3], out double calif))
+                        {
+                            sumaCalificaciones += calif;
+                            totalCalificaciones++;
+                        }
+                    }
+                }
+            }
+
+            lblTotalAlumn.Text = alumnosUnicos.Count.ToString();
+            lblPromedioGeneral.Text = totalCalificaciones > 0
+                ? (sumaCalificaciones / totalCalificaciones).ToString("F2")
+                : "0.00";
+        }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
@@ -64,42 +104,7 @@ namespace Sistema_de_Notas_Escolares_POO
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            dvgMenu.Columns.Clear();
-            //dvgMenu.Rows.Clear();
-            dvgMenu.Columns.Add("Matricula", "Matricula");
-            dvgMenu.Columns.Add("Nombre", "Nombre");
-            dvgMenu.Columns.Add("Materia", "Materia");
-            dvgMenu.Columns.Add("Calificacion", "Calificacion");
-
-            string rutaArchivo = "Alumnos.txt";
-            HashSet<string> alumnosUnicos = new HashSet<string>();
-            double sumaCalificaciones = 0;
-            int totalCalificaciones = 0;
-
-            if (File.Exists(rutaArchivo))
-            {
-                string[] lineas = File.ReadAllLines(rutaArchivo);
-                foreach (string linea in lineas)
-                {
-                    string[] datos = linea.Split(',');
-                    if (datos.Length >= 4)
-                    {
-                        dvgMenu.Rows.Add(datos[0], datos[1], datos[2], datos[3]);
-                        alumnosUnicos.Add(datos[0]); 
-                        if (double.TryParse(datos[3], out double calif))
-                        {
-                            sumaCalificaciones += calif;
-                            totalCalificaciones++;
-                        }
-                    }
-                }
-            }
-
-            lblTotalAlumn.Text = alumnosUnicos.Count.ToString();
-
-            lblPromedioGeneral.Text = totalCalificaciones > 0
-                ? (sumaCalificaciones / totalCalificaciones).ToString("F2")
-                : "0.00";
+            CargarResumen();
         }
 
         public abstract class Persona
@@ -118,15 +123,12 @@ namespace Sistema_de_Notas_Escolares_POO
                     throw new ArgumentException("El nombre no puede estar vacío.", nameof(nombre));
                 }
 
-                Matricula = matricula;
-                Nombre = nombre;
+                Matricula = matricula.Trim();
+                Nombre = nombre.Trim();
             }
             public abstract string MostrarDatos();
 
-            public override string ToString()
-            {
-                return Matricula + " - " + Nombre;
-            }
+            public override string ToString() => $"{Matricula} - {Nombre}";
 
 
             //====================================================================
