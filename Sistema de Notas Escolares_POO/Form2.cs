@@ -1,12 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Sistema_de_Notas_Escolares_POO
@@ -37,7 +31,9 @@ namespace Sistema_de_Notas_Escolares_POO
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            EliminarAlumno Eliminar = new EliminarAlumno();
+            Eliminar.Show();
         }
 
         private void btnCalificaciones_Click(object sender, EventArgs e)
@@ -69,13 +65,13 @@ namespace Sistema_de_Notas_Escolares_POO
         private void Form2_Load(object sender, EventArgs e)
         {
             dvgMenu.Columns.Clear();
-            dvgMenu.Rows.Clear();
+            //dvgMenu.Rows.Clear();
             dvgMenu.Columns.Add("Matricula", "Matricula");
             dvgMenu.Columns.Add("Nombre", "Nombre");
             dvgMenu.Columns.Add("Materia", "Materia");
             dvgMenu.Columns.Add("Calificacion", "Calificacion");
 
-            string rutaArchivo = "Calificaciones.txt";
+            string rutaArchivo = "Alumnos.txt";
             HashSet<string> alumnosUnicos = new HashSet<string>();
             double sumaCalificaciones = 0;
             int totalCalificaciones = 0;

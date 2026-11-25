@@ -42,7 +42,34 @@ namespace Sistema_de_Notas_Escolares_POO
         
         private void frmCalificaciones_Load(object sender, EventArgs e)
         {
-            
+            dgvAlumno.Columns.Clear();
+            //dgvAlumno.Rows.Clear();
+            dgvAlumno.Columns.Add("Matricula", "Matrícula");
+            dgvAlumno.Columns.Add("Nombre", "Nombre");
+            dgvAlumno.Columns.Add("Materia", "Materia");
+            dgvAlumno.Columns.Add("Calificacion", "Calificación");
+
+            //string rutaArchivo = "Alumnos.txt";
+            //if (File.Exists(rutaArchivo))
+            //{
+            //  string[] lineas = File.ReadAllLines(rutaArchivo);
+            //foreach (string linea in lineas)
+            //{
+            //  string[] datos = linea.Split(',');
+            // if (datos.Length >= 2)
+            //{
+            //  dgvAlumno.Rows.Add(datos[0], datos[1], "", "");
+            //}
+            //}
+            string rutaArchivo = "Alumnos.txt";
+            if (File.Exists(rutaArchivo))
+            {
+                string[] lineas = File.ReadAllLines(rutaArchivo);
+                foreach (string linea in lineas)
+                {
+                    string[] datos = linea.Split(',');
+                }
+            }
         }
         private void btnRegresar_Click(object sender, EventArgs e)
         {
@@ -81,7 +108,7 @@ namespace Sistema_de_Notas_Escolares_POO
 
         private void GuardarCalificaciones()
         {
-            using (StreamWriter sw = new StreamWriter("Calificaciones.txt", false))
+            using (StreamWriter sw = new StreamWriter("Alumnos.txt", false))
             {
                 foreach (DataGridViewRow row in dgvAlumno.Rows)
                 {
@@ -98,7 +125,7 @@ namespace Sistema_de_Notas_Escolares_POO
         }
         private void CargarCalificaciones()
         {
-            string rutaArchivo = "Calificaciones.txt";
+            string rutaArchivo = "Alumnos.txt";
             if (File.Exists(rutaArchivo))
             {
                 if (dgvAlumno.Columns.Count == 0)
@@ -123,14 +150,20 @@ namespace Sistema_de_Notas_Escolares_POO
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (dgvAlumno.CurrentRow != null)
+            if (dgvAlumno.CurrentRow != null && !dgvAlumno.CurrentRow.IsNewRow)
             {
+                // Solo borra la materia y la calificación, NO el alumno
                 dgvAlumno.CurrentRow.Cells["Materia"].Value = "";
                 dgvAlumno.CurrentRow.Cells["Calificacion"].Value = "";
+
+                // Guarda los cambios en Alumnos.txt
+                GuardarCalificaciones();
+
+                MessageBox.Show("Calificación eliminada y guardada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("Por favor, seleccione un alumno para eliminar.", "Selección requerida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Por favor, seleccione un alumno para eliminar la calificación.", "Selección requerida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -143,11 +176,10 @@ namespace Sistema_de_Notas_Escolares_POO
             }
         }
 
-
         public void RefrescarGrid()
         {
             dgvAlumno.Rows.Clear();
-            string rutaArchivo = "Calificaciones.txt";
+            string rutaArchivo = "Alumnos.txt";
             if (File.Exists(rutaArchivo))
             {
                 string[] lineas = File.ReadAllLines(rutaArchivo);
@@ -195,6 +227,23 @@ namespace Sistema_de_Notas_Escolares_POO
                 lineas.Add($"{persona.Nombre}|{persona.Matricula}");
             }
             File.WriteAllLines(_rutaArchivo, lineas);
+        }
+        public void CargarAlumnos()
+        {
+            dgvAlumno.Rows.Clear();
+            string rutaArchivo = "Alumnos.txt";
+            if (File.Exists(rutaArchivo))
+            {
+                string[] lineas = File.ReadAllLines(rutaArchivo);
+                foreach (string linea in lineas)
+                {
+                    string[] datos = linea.Split(',');
+                    if (datos.Length >= 2)
+                    {
+                        dgvAlumno.Rows.Add(datos[0], datos[1], "", "");
+                    }
+                }
+            }
         }
     }
 }
