@@ -170,7 +170,7 @@
             // dgvAlumno
             // 
             this.dgvAlumno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAlumno.Location = new System.Drawing.Point(6, 27);
+            this.dgvAlumno.Location = new System.Drawing.Point(11, 26);
             this.dgvAlumno.Name = "dgvAlumno";
             this.dgvAlumno.Size = new System.Drawing.Size(388, 150);
             this.dgvAlumno.TabIndex = 0;
