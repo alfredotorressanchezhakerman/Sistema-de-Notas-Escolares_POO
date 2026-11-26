@@ -28,5 +28,15 @@ namespace Sistema_de_Notas_Escolares_POO
             Form2 frm = new Form2();
             frm.Show();
         }
+
+        private void listMaterias_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmMaterias_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
